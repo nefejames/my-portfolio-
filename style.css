@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 95%;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+/*HEADER STYLES*/
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header #burger {
+  align-self: flex-end;
+  font-size: 40px;
+  margin: 1.5rem 1.5rem;
+  cursor: pointer;
+  color: rgb(71, 37, 163);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 35vh;
+  background: rgb(71, 37, 163);
+  transition: height 0.3s;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+nav .material-icons {
+  font-size: 40px;
+  color: whitesmoke;
+  align-self: flex-end;
+  margin: 1.5rem 1.5rem 0 0;
+  cursor: pointer;
+}
+
+nav ul a {
+  color: white;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*MAIN CONTENT STYLES*/
+main h1 {
+  font-size: 2.2rem;
+  color: rgb(71, 37, 163);
+  margin-bottom: 0.6rem;
+}
+
+main p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.3rem;
+}
+
+/*PROJECT PAGE STYLES*/
+.project-container h1 {
+  margin-bottom: 2rem;
+}
+
+.project {
+  margin-bottom: 3rem;
+  border-radius: 3px;
+  padding: 1.3rem;
+  box-shadow: 2px 3px 10px rgba(71, 37, 163, 0.3);
+}
+
+.project-title {
+  color: rgb(71, 37, 163);
+}
+
+.project p {
+  color: rgb(99, 92, 92);
+}
+
+.project img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project:nth-child(5) a {
+  display: flex;
+  width: 100%;
+}
+
+.project:nth-child(5) img {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  justify-self: center;
+}
+
+/*CONTACT ME STYLES*/
+.links {
+  margin-top: 3rem;
+}
+
+.links h2 {
+  color: rgb(71, 37, 163);
+  margin-bottom: 0.5rem;
+}
+
+ul.social-links {
+  list-style: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+ul.social-links a i {
+  font-size: 1.7rem;
+  color: rgb(99, 92, 92);
+}
+
+ul.social-links a i:hover {
+  font-size: 1.7rem;
+  color: rgb(71, 37, 163);
+}
+
+/*form styles*/
+form {
+  display: flex;
+  margin: 4rem auto 0;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  color: rgb(99, 92, 92);
+  margin-bottom: 1.3rem;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border: 2px solid rgb(71, 37, 163);
+}
+
+input {
+  padding: 0.7rem;
+}
+
+input[type="submit"] {
+  color: white;
+  border: none;
+  background: rgb(71, 37, 163);
+}
